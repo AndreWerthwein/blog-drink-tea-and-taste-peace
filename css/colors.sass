@@ -1,0 +1,33 @@
+//Basisfarben — Schwarz/Weiß
+$basis-color-1: rgb(0, 0, 0)
+$basis-color-2: rgb(255, 255, 255)
+$basis-color-3: rgb(255, 215, 0)
+$basis-color-4: rgb(0, 250, 154)
+
+//Kommentarfarbe — Grau, 50%
+$annotation-color-1: rgb(128, 128, 128)
+
+//Kommentarfarbe — Grau, 25%
+$annotation-color-2: rgb(220, 220, 220)
+
+// Funktion einer Variable für einen Farbverlauf (Links > Rechts)
+@mixin gradient-left-to-right($left, $right)
+    background: $left
+    background: -moz-linear-gradient(right, $left 0%, $right 100%)
+    background: -webkit-gradient(linear, left, right, color-stop(0%,$left), color-stop(100%, $right))
+    background: -webkit-linear-gradient(right, $left 0%, $right 100%)
+    background: -o-linear-gradient(right, $left 0%, $right 100%)
+    background: -ms-linear-gradient(right, $left 0%, $right 100%)
+    background: linear-gradient(to left, $left 0%, $right 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right', GradientType=0)
+
+// Funktion einer Variable für einen Farbverlauf (Oben > Unten)
+@mixin gradient-top-to-bottom($top, $bottom)
+    background: $top
+    background: -moz-linear-gradient(top, $top 0%, $bottom 100%)
+    background: -webkit-gradient(linear, bottom, top, color-stop(0%, $top), color-stop(100%, $bottom))
+    background: -webkit-linear-gradient(top, $top 0%, $bottom 100%)
+    background: -o-linear-gradient(top, $top 0%, $bottom 100%)
+    background: -ms-linear-gradient(top, $top 0%, $bottom 100%)
+    background: linear-gradient(to bottom, $top 0%, $bottom 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom', GradientType=0)

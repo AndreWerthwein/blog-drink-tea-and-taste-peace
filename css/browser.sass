@@ -1,0 +1,24 @@
+@import colors.sass
+
+// Text-Markierung, User-Selection
+::selection
+  background: $basis-color-2 !important
+  color: $basis-color-2 !important
+
+::-moz-selection
+  background: $basis-color-2 !important
+  color: $basis-color-2 !important
+
+// Scrollbar
+::-webkit-scrollbar
+  width: 4px
+  height: 4px
+  z-index: 5
+
+::-webkit-scrollbar-thumb:vertical
+  background: $basis-color-1
+  @include gradient-top-to-bottom($basis-color-3, $basis-color-4)
+
+::-webkit-scrollbar-thumb:horizontal
+  background: $basis-color-1
+  @include gradient-left-to-right($basis-color-3, $basis-color-4)
