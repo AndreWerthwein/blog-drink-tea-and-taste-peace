@@ -1,17 +1,42 @@
+// Glossar-Raster
+.glossary-alphabet
+  width: 30px
+  margin: 15px 0px 0px 30px
+  text-align: center
+
+.glossary-entries
+  width: calc(100vw - (240px + 120px))
+  margin: 15px 330px 30px 30px
+  padding: 0px 0px 0px 30px
+  direction: ltr
+  display: flex
+  justify-content: space-between
+  align-items: top
+  flex-wrap: wrap
+
+.glossary-entry
+  flex: 0 0 auto
+  width: calc(50% - (30px / 2))
+  -webkit-transition: all 0.6s ease-in
+  -moz-transition: all 0.6s ease-in
+  -o-transition: all 0.6s ease-in
+  transition: all 0.6s ease-in
+  overflow: hidden
+
+// Tee-Daten — Menge, Wassertemperatur, Ziehzeit, Preis
 .tea-data > tbody > tr > td:last-child
   padding: 0px 0px 0px 15px
 
-.tea-data
-  margin: 0px 0px 10px 0px
-
-.tea-tags > li::before
-  content: '#'
-
+// Tee-Hashtags — Suchbegriffe
 .tea-tags
+  margin: 15px 0px 0px 0px
   display: flex
   justify-content: flex-start
   align-items: center
   flex-wrap: wrap
+
+.tea-tags > li::before
+  content: '#'
 
 .tea-tags > li
   -webkit-transition: color 0.4s ease-in
