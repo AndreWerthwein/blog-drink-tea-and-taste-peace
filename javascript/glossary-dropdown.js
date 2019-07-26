@@ -20,6 +20,7 @@ for (var x = 0; x < GlossaryEntries.length; x = x + 1) {
       PageLoad();
       DropdownToggle = "";
     } else {
+      PageLoad();
       this.style.maxHeight = 1000 + "px";
       DropdownToggle = DropdownCurrent;
     }
