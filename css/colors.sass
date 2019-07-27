@@ -11,10 +11,10 @@ hr
   color: $farbe-kommentar-1
 
 // Navigation
-nav > section > p
+#main-navigation > section > p, #responsive-navigation-content > footer > p
   color: $farbe-kommentar-1
 
-nav > table > tbody > tr
+#main-navigation > table > tbody > tr, #responsive-navigation-content > section > section > table > tbody > tr
   color: $farbe-kommentar-1
   -webkit-transition: all 0.4s ease-out
   -moz-transition: all 0.4s ease-out
@@ -22,8 +22,21 @@ nav > table > tbody > tr
   transition: all 0.4s ease-out
 
 .current-page
-  color: $farbe-basis-1
+  color: $farbe-basis-1 !important
+
+#responsive-navigation-header, #responsive-navigation-content
+  background-color: $farbe-basis-2
 
 // Blogeinträge
 .tea-tags
+  color: $farbe-kommentar-1
+
+// Bewertungen, Reviews
+.rating
+  background-color: $farbe-kommentar-1
+
+.rating > section
+  background-color: $farbe-basis-3
+
+.rating-dropdown > header > .material-icons
   color: $farbe-kommentar-1

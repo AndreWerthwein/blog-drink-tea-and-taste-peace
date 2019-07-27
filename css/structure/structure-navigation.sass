@@ -1,5 +1,5 @@
 // Navigation
-nav
+#main-navigation
   width: 240px
   height: auto
   padding: 0px 10px
@@ -7,33 +7,78 @@ nav
   top: 15px
   right: 15px
 
-nav > section
+#main-navigation > section
   margin: 0px 0px 15px 0px
 
-nav > section > img
+#main-navigation > section > img
   width: 100%
 
-nav > section > h1
+#main-navigation > section > h1
   margin: 0px 0px 5px 0px
 
+#responsive-navigation-header
+  width: 100%
+  padding: 5px 15px
+  position: fixed
+  top: 0px
+  left: 0px
+
+#responsive-navigation-header > header
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 10
+
+#responsive-navigation-header > header > h1, #responsive-navigation-header > header > .material-icons
+  margin: 0px
+
+#responsive-navigation-header > header > .material-icons
+  width: 32px
+  height: 32px
+
+#responsive-navigation-content
+  width: 100%
+  margin: -100vh 0px 0px 0px
+  z-index: -1
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+
+#responsive-navigation-content > section
+  width: 100%
+  padding: 15px
+  display: flex
+  justify-content: flex-start
+  align-items: top
+  flex-wrap: wrap
+
+#responsive-navigation-content > section > section
+  width: 25%
+  margin: 15px 0px
+
+#responsive-navigation-header, #responsive-navigation-content
+  display: none
+
 // Navigation
-nav > h2
+#main-navigation > h2
   width: 32px
   margin: 0px
   text-align: right
 
-nav > table
+#main-navigation > table, #responsive-navigation-content > section > section > table
   width: calc(100% - 32px)
   margin: 0px 0px 15px 32px
 
-nav > table > tbody > tr > td:first-child
+#main-navigation > table > tbody > tr > td:first-child, #responsive-navigation-content > section > section > table > tbody > tr > td:first-child
   width: 21px
 
-nav > table > tbody > tr > td:nth-child(2)
+#main-navigation > table > tbody > tr > td:nth-child(2), #responsive-navigation-content > section > section > table > tbody > tr > td:nth-child(2)
   width: 30px
   text-align: center
 
-nav > table > tbody > tr > td:last-child
+#main-navigation > table > tbody > tr > td:last-child, #responsive-navigation-content > section > section > table > tbody > tr > td:last-child
   width: calc(100% - 51px)
 
 // Letztes Update
