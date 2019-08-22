@@ -1,8 +1,10 @@
-var ResponsiveNavigationHeader = document.querySelector('#responsive-navigation-header');
-var ResponsiveNavigationContent = document.querySelector('#responsive-navigation-content');
+"use strict";
 
-ResponsiveNavigationHeader.addEventListener('click', function(e) {
+var responsiveNavigationHeader = document.querySelector('#responsive-navigation-header');
+var responsiveNavigationContent = document.querySelector('#responsive-navigation-content');
+
+responsiveNavigationHeader.addEventListener('click', function(e) {
   e.preventDefault();
 
-   ResponsiveNavigationContent.classList.toggle('responsive-navigation-show');
+   responsiveNavigationContent.classList.toggle('responsive-navigation-show');
 });

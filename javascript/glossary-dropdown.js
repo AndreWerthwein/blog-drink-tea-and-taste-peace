@@ -1,28 +1,34 @@
-var GlossaryEntries = document.querySelectorAll('.glossary-entry');
-var DropdownToggle = "";
+"use strict";
 
-function MinifyGlossaryEntries() {
-  for (var x = 0; x < GlossaryEntries.length; x = x + 1) {
-    GlossaryEntries[x].style.maxHeight = 45.4 + "px";
+var glossaryEntries = document.querySelectorAll('.glossary-entry');
+var dropdownToggle = "";
+
+function minifyGlossaryEntries() {
+  for (var x = 0; x < glossaryEntries.length; x = x + 1) {
+    glossaryEntries[x].style.maxHeight = 45.4 + "px";
   }
 }
 
 // Herstellung des Seitenaufbaus
-MinifyGlossaryEntries();
+minifyGlossaryEntries();
 
-for (var x = 0; x < GlossaryEntries.length; x = x + 1) {
-  GlossaryEntries[x].addEventListener('click', function(e) {
+for (var x = 0; x < glossaryEntries.length; x = x + 1) {
+  glossaryEntries[x].addEventListener('click', function(e) {
     e.preventDefault();
 
-    var DropdownCurrent = this.dataset.entry;
+    var dropdownCurrent = this.dataset.entry;
 
-    if (DropdownToggle === DropdownCurrent) {
-      MinifyGlossaryEntries();
-      DropdownToggle = "";
+    if (dropdownToggle === dropdownCurrent) {
+      minifyGlossaryEntries();
+      dropdownToggle = "";
+    } else if (this.offsetHeight > 45.4) {
+      console.log(this.offsetHeight);
+      minifyGlossaryEntries();
+      dropdownToggle = "";
     } else {
-      MinifyGlossaryEntries();
+      minifyGlossaryEntries();
       this.style.maxHeight = 1000 + "px";
-      DropdownToggle = DropdownCurrent;
+      dropdownToggle = dropdownCurrent;
     }
   });
 }

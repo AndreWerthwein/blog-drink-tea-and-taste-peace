@@ -1,61 +1,63 @@
-var RatingDropdown = document.querySelectorAll('.rating-dropdown');
-var DropdownToggleRating = "";
+"use strict";
 
-function MinifyRatingDropdown() {
-  for (var x = 0; x < RatingDropdown.length; x = x + 1) {
-    RatingDropdown[x].style.height = 37.4 + "px";
-    RatingDropdown[x].querySelector('.material-icons').innerHTML = "add";
+var ratingDropdown = document.querySelectorAll('.rating-dropdown');
+var dropdownToggleRating = "";
+
+function MinifyratingDropdown() {
+  for (var x = 0; x < ratingDropdown.length; x = x + 1) {
+    ratingDropdown[x].style.height = 37.4 + "px";
+    ratingDropdown[x].querySelector('.material-icons').innerHTML = "add";
   }
 }
 
-for (var x = 0; x < RatingDropdown.length; x = x + 1) {
-  RatingDropdown[x].addEventListener('click', function(e) {
+for (var x = 0; x < ratingDropdown.length; x = x + 1) {
+  ratingDropdown[x].addEventListener('click', function(e) {
     e.preventDefault();
 
-    var RatingProperty = this.querySelectorAll('.rating-property');
-    var RatingDropdownNewHeight = 37.4 + (parseInt(RatingProperty.length) + 1) * 25.6;
+    var ratingProperty = this.querySelectorAll('.rating-property');
+    var ratingDropdownNewHeight = 37.4 + (parseInt(ratingProperty.length) + 1) * 25.6;
 
-    var DropdownCurrentRating = this.dataset.rating;
+    var dropdownCurrentRating = this.dataset.rating;
 
-    if (DropdownToggleRating === DropdownCurrentRating) {
-      MinifyRatingDropdown();
-      DropdownToggleRating = "";
+    if (dropdownToggleRating === dropdownCurrentRating) {
+      MinifyratingDropdown();
+      dropdownToggleRating = "";
     } else {
-      MinifyRatingDropdown();
-      this.style.height = RatingDropdownNewHeight + "px";
+      MinifyratingDropdown();
+      this.style.height = ratingDropdownNewHeight + "px";
 
       this.querySelector('.material-icons').innerHTML = "remove";
-      DropdownToggleRating = DropdownCurrentRating;
+      dropdownToggleRating = dropdownCurrentRating;
     }
   });
 }
 
-var ReviewEntries = document.querySelectorAll('.review-entry > header');
-var DropdownToggleReview = "";
+var reviewEntries = document.querySelectorAll('.review-entry > header');
+var dropdownToggleReview = "";
 
-function MinifyReviewDropdown() {
-  for (var x = 0; x < ReviewEntries.length; x = x + 1) {
-    ReviewEntries[x].closest('.review-entry').style.maxHeight = 41.4 + "px";
+function minifyReviewDropdown() {
+  for (var x = 0; x < reviewEntries.length; x = x + 1) {
+    reviewEntries[x].closest('.review-entry').style.maxHeight = 41.4 + "px";
   }
 }
 
 // Herstellung des Seitenaufbaus
-MinifyReviewDropdown();
+minifyReviewDropdown();
 
-for (var x = 0; x < ReviewEntries.length; x = x + 1) {
-  ReviewEntries[x].addEventListener('click', function(e) {
+for (var x = 0; x < reviewEntries.length; x = x + 1) {
+  reviewEntries[x].addEventListener('click', function(e) {
     e.preventDefault();
 
-    var DropdownCurrentReview = this.dataset.review;
+    var dropdownCurrentReview = this.dataset.review;
 
-    if (DropdownToggleReview === DropdownCurrentReview) {
-      MinifyReviewDropdown();
-      DropdownToggleReview = "";
+    if (dropdownToggleReview === dropdownCurrentReview) {
+      minifyReviewDropdown();
+      dropdownToggleReview = "";
     } else {
-      MinifyReviewDropdown();
-      MinifyRatingDropdown();
+      minifyReviewDropdown();
+      MinifyratingDropdown();
       this.closest('.review-entry').style.maxHeight = 2000 + "px";
-      DropdownToggleReview = DropdownCurrentReview;
+      dropdownToggleReview = dropdownCurrentReview;
     }
   });
 }
