@@ -4,7 +4,7 @@
 hr
   background-color: $farbe-basis-1
 
-.latest-update
+.update-latest
   color: $farbe-kommentar-1
 
 .comment
@@ -51,6 +51,10 @@ input::placeholder
 
 input:-ms-input-placeholder
   color: $farbe-kommentar-1
-  
+
 input::-ms-input-placeholder
   color: $farbe-kommentar-1
+
+// color-changes on hover
+#main-navigation > table > tbody > tr:hover, #main-navigation > table > tbody > tr:focus, #main-navigation > table > tbody > tr:active, #responsive-navigation-content > section > section > table > tbody > tr:hover, #responsive-navigation-content > section > section > table > tbody > tr:focus, #responsive-navigation-content > section > section > table > tbody > tr:active, .tea-tags > li:hover, .tea-tags > li:focus, .tea-tags > li:active, .comment:hover, .comment:focus, .comment:active, .rating-dropdown > header:hover > .material-icons, .rating-dropdown > header:focus > .material-icons, .rating-dropdown > header:active > .material-icons
+  color: $farbe-basis-1
