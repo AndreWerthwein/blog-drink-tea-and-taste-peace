@@ -1,507 +1,216 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+doctype html
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta http-equiv="language" content="DE" />
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="email=yes">
-  <meta name="format-detection" content="date=yes">
+html(lang="de")
 
-  <link rel="stylesheet" href="./css/reset.min.css">
-  <link rel="stylesheet" href="./css/structure.min.css">
-  <link rel="stylesheet" href="./css/typefaces.min.css">
-  <link rel="stylesheet" href="./css/typography.min.css">
-  <title>Drink Tea, Taste Peace</title>
-</head>
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")
+    meta(http-equiv="language" content="en")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="format-detection" content="address=no")
+    meta(name="format-detection" content="email=yes")
+    meta(name="format-detection" content="date=yes")
 
-<body>
-  <nav id="main-navigation">
-    <section>
-      <h1>Drink Tea,<br />Taste Peace</h1>
-    </section>
+    meta(name="description" lang="en" content="Blog of an Amateur-Tea-Sommelier")
 
-    <h2>00</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>00</td>
-          <td>&mdash;</td>
-          <td><a href="index.html">Home</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="author" content="André-Pascal Werthwein")
+    meta(name="copyright" content="André-Pascal Werthwein")
+    meta(name="publisher" content="blog.andrewerthwein.de")
+    meta(name="title" lang="en" content="Blog of an Amateur-Tea-Sommelier")
+    meta(name="page-topic" lang="en" content="Tea")
+    meta(name="audience" lang="en" content="All")
+    meta(name="page-type" lang="en" content="Blog")
 
-    <h2>01</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="about-me.html">About me?</a></td>
-        </tr>
-        <tr class="current-page">
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="glossary.html">Glossary</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="reviews.html">Reviews</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="robots" content="noindex, nofollow")
+    meta(name="revisit-after" content="30 days")
+    meta(name="expires" content="never")
+    meta(name="allow-search" content="no")
+    meta(name="google" content="nositelinkssearchbox")
+    meta(name="googlebot" content="noindex")
 
-    <h2>02</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="july.html">07/2019</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="theme-color" content="#FFFFFF")
 
-    <h2>03</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-        </tr>
-      </tbody>
-    </table>
+    //-link(rel="shortcut icon" type="image/x-icon" href="./favicons/favicon.ico")
+    //-link(rel="shortcut icon" href="./favicons/favicon.ico")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_32x32.png" sizes="32x32")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_96x96.png" sizes="96x96")
+    //-link(rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicons/fallback-touch-icon-57x57-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicons/universal-touch-icon-60x60-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicons/apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicons/apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicons/apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/touch-icon-ipad.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="167x167" href="./favicons/touch-icon-ipad-retina.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="180x180" href="./favicons/apple-touch-icon.png")
+    //-link(rel="shortcut icon" sizes="196x196" href="./favicons/chromeapp-touch-icon-196x196-precomposed.png")
+    //-meta(name="msapplication-TileColor" content="#ffffff")
+    //-meta(name="msapplication-TileImage" content="./favicons/mstile-144x144.png")
 
-    <h2>04</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="imprint.html">Imprint</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="privacy-policy.html">Privacy Policy</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>
-      </tbody>
-    </table>
+    link(rel="stylesheet" href="./css/design.min.css")
+    link(rel="stylesheet" href="./css/design-responsive.min.css")
 
-    <h2>05</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="feed/feed.json">JSON-Feed</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-        </tr>
-      </tbody>
-    </table>
+    title Drink Tea, Taste Peace
 
-    <p class="latest-update">2019/07/20 00:03</p>
-  </nav>
+  body
+    nav#navigation-main
+      section
+        h1 Drink Tea,
+          br
+          | Taste Peace
 
-  <nav id="responsive-navigation-header">
-    <header>
-      <h1>Drink Tea, Taste Peace</h1>
-      <i class="material-icons">more_horizontal</i>
-    </header>
-  </nav>
-  <nav id="responsive-navigation-content">
-    <section>
-      <section>
-        <h2>00</h2>
+      hr
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr class="current-page">
-              <td>00</td>
-              <td>&mdash;</td>
-              <td><a href="index.html">Home</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      h2 00
+      table
+        thead
+        tbody
+          tr
+            td 00
+            td &mdash;
+            td
+              a(href="index.html") Home
 
-      <section>
-        <h2>01</h2>
+      h2 01
+      table
+        thead
+        tbody
+          tr
+            td 01
+            td &mdash;
+            td
+              a(href="about-me.html") About me?
+          tr
+            td 02
+            td &mdash;
+            td
+              a(href="glossary.html") Glossary
+          tr
+            td 03
+            td &mdash;
+            td
+              a(href="reviews.html") Reviews
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="about-me.html">About me?</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="glossary.html">Glossary</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="reviews.html">Reviews</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      h2 02
+      table
+        thead
+        tbody
+          tr
+            td 01
+            td &mdash;
+            td
+              a(href="july.html") 07/2019
+              br
+              | &times;&nbsp;&nbsp;Monday 01
+              sup st
+              br
+              | &times;&nbsp;&nbsp;Tuesday 02
+              sup nd
 
-      <section>
-        <h2>02</h2>
+  input(name="search" type="text" placeholder="Search this Glossary")
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="july.html">07/2019</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+  div.glossary-entries
+    div.glossary-entry(data-entry="aracha")
+      header
+        h3 Aracha
+      section
+        section
+          p Aracha is a very basic tea. It basically contains all the parts of the Camellia Sinensis, that can be used to create Tea. So this tea consists of: Leaves, Leaf Stalk, Stems, Leaf Hair as well as broken Leaves. All these ingredients are steamed and rolled.
 
-      <section>
-        <h2>03</h2>
+          p Usually Aracha is beeing finished after it has been sold, which means that Aracha is mainy as basis for other Green Teas to build upon. Aracha is for example used to blend different Flavorprofiles of Sencha.
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    div.glossary-entry(data-entry="gyokuro")
+      header
+        h3 Gyokuro, »Jewel Dew«
 
-      <section>
-        <h2>04</h2>
+      section
+        section
+          p Gyokuro is one of most high quality Teas Japan has to offer. Of course also within this type of Tea there are different stages of quality. This type of Tea grows for 21 days in the shade before beeing harvested. Gyokuro is grown on a special variety of the Camellia Sinensis, such as Asahi, Okumidori, Yamakai, and Saemidori. This Tea is in need of special care, when prepared. The name »Jewel Dew« refers to the pale green color of the Tea.
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="imprint.html">Imprint</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="privacy-policy.html">Privacy Policy</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="contact.html">Contact</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          table.tea-data
+            thead
+            tbody
+              tr
+                td Tea Leaves
+                td ~ 6-10 g / 180 ml
+              tr
+                td Temperature
+                td ~ 50-60 °C
+              tr
+                td Brewing Time
+                td ~ 01:30 Minutes
+              tr
+                td Infusions
+                td ~ 3-4
+              tr
+                td Prices
+                td ¥ 3500&nbsp;
+                  span.comment [> € 29,00]
 
-      <section>
-        <h2>05</h2>
+          p The highest quality Gyokuros can be infused with a water temperature of&nbsp;
+            span.no-break ~ 40 °C
+            | . In some cases even the Ice-Methode can be used.
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="feed/feed.json">JSON-Feed</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </section>
-    <footer>
-      <p class="latest-update">2019/07/20 00:03</p>
-    </footer>
-  </nav>
+    div.glossary-entry(data-entry="kukicha")
+      header
+        h3 Kukicha
 
-  <input name="search" type="text" placeholder="Search this Glossary" />
+      section
+        section
+          p Kukicha is a japenese Green Tea, which mainly consists of Leaf Veins and Stems, and therefore also contains less theine. The quality of Kukicha is similar to the quality of Sencha.
 
-  <h2 class="glossary-alphabet" data-glossary="A">A</h2>
-  <div class="glossary-entries" data-glossary="A">
-    <div class="glossary-entry" data-entry="aracha">
-      <header>
-        <h3>Aracha</h3>
-      </header>
-      <section>
-        <section>
-          <p>Aracha is a very basic tea. It basically contains all the parts of the Camellia Sinensis, that can be used to create Tea. So this tea consists of: Leaves, Leaf Stalk, Stems, Leaf Hair as well as broken Leaves. All these ingredients are steamed and rolled.</p>
+          p If Kukicha consist of Leaf Vains that were during the preparation of Gyokuro, it is called Karigane or Shiarore to indicate the special taste.
 
-          <p>Usually Aracha is beeing finished after it has been sold, which means that Aracha is mainy as basis for other Green Teas to build upon. Aracha is for example used to blend different Flavorprofiles of Sencha.</p>
-        </section>
-        <footer>
-          <ul class="tea-tags">
-            <li>Japan</li>
-            <li>GreenTea</li>
-            <li>Aracha</li>
-            <li>Basis</li>
-            <li>Blending</li>
-            <li>Sencha</li>
-            <li>Leaves</li>
-            <li>LeafStalk</li>
-            <li>Stems</li>
-            <li>LeafHair</li>
-            <li>BrokenLeaves</li>
-          </ul>
-        </footer>
-      </section>
-    </div>
-  </div>
+          table.tea-data
+            thead
+            tbody
+              tr
+                td Tea Leaves
+                td ~ 3-4 g / 180 ml
+              tr
+                td Temperature
+                td ~ 90 °C
+              tr
+                td Brewing Time
+                td ~ 00:35 Minutes
+              tr
+                td Infusions
+                td ~ 3-5
 
-  <h2 class="glossary-alphabet" data-glossary="B">B</h2>
+          p The highest quality Gyokuros can be infused with a water temperature of&nbsp;
+            span.no-break ~ 40 °C
+            | . In some cases even the Ice-Methode can be used.
 
-  <h2 class="glossary-alphabet" data-glossary="C">C</h2>
+    div.glossary-entry(data-entry="kamairicha")
+      header
+        h3 Kamairicha
 
-  <h2 class="glossary-alphabet" data-glossary="D">D</h2>
+      section
+        section
+          p Kamairicha is very different from other Japanese Teas. In fact this Tea doesn't even fit the typical flavor profile of Japenese Green Tea. Very early in the process of creating this Tea, the Leaves are roasted at about&nbsp;
+            span.no-break ~ 300 °C
+            | . These Leaves are not steamed. Typically this Tea is shaped into comma or Magatama. The shape of the processed Tea Leaves reminds more of Chinese Teas than Japanese.
 
-  <h2 class="glossary-alphabet" data-glossary="E">E</h2>
+          p This Tea is said have a slightly roasted flavor and fresh sweetness.
 
-  <h2 class="glossary-alphabet" data-glossary="F">F</h2>
+          table.tea-data
+            thead
+            tbody
+              tr
+                td Tea Leaves
+                td ~ 5 g / 450 ml
+              tr
+                td Temperature
+                td ~ 80 °C
+              tr
+                td Brewing Time
+                td ~ 01:00 Minutes
+              tr
+                td Infusions
+                td ~ 2
 
-  <h2 class="glossary-alphabet" data-glossary="G">G</h2>
-  <div class="glossary-entries" data-glossary="G">
-    <div class="glossary-entry" data-entry="gyokuro">
-      <header>
-        <h3>Gyokuro, »Jewel Dew«</h3>
-      </header>
-      <section>
-        <section>
-          <p>Gyokuro is one of most high quality Teas Japan has to offer. Of course also within this type of Tea there are different stages of quality. This type of Tea grows for 21 days in the shade before beeing harvested. Gyokuro is grown on a special variety of the Camellia Sinensis, such as Asahi, Okumidori, Yamakai, and Saemidori. This Tea is in need of special care, when prepared. The name »Jewel Dew« refers to the pale green color of the Tea.</p>
+    p.update-latest 2019/07/20 00:03
 
-          <table class="tea-data">
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td>Tea Leaves</td>
-                <td>~ 6-10 g / 180 ml<br /></td>
-              </tr>
-              <tr>
-                <td>Temperature</td>
-                <td>~ 50-60 °C</td>
-              </tr>
-              <tr>
-                <td>Brewing Time</td>
-                <td>~ 01:30 Minutes</td>
-              </tr>
-              <tr>
-                <td>Infusions</td>
-                <td>~ 3-4</td>
-              </tr>
-              <tr>
-                <td>Prices</td>
-                <td>> ¥ 3500&nbsp;<span class="comment">[> € 29,00]</span></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p>The highest quality Gyokuros can be infused with a water temperature of <span class="no-break">~ 40 °C</span>. In some cases even the Ice-Methode can be used.</sup></p>
-        </section>
-        <footer>
-          <ul class="tea-tags">
-            <li>Japan</li>
-            <li>GreenTea</li>
-            <li>Gyokuro</li>
-            <li>JewelDew</li>
-            <li>JadeDew</li>
-            <li>PearlDew</li>
-            <li>PreciousDew</li>
-            <li>Leaves</li>
-            <li>Shade</li>
-            <li>Shadow</li>
-            <li>Uji</li>
-            <li>Kyoto</li>
-            <li>Shizuoka</li>
-            <li>Kyushu</li>
-          </ul>
-        </footer>
-      </section>
-    </div>
-  </div>
-
-  <h2 class="glossary-alphabet" data-glossary="H">H</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="I">I</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="J">J</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="K">K</h2>
-  <div class="glossary-entries" data-glossary="K">
-    <div class="glossary-entry" data-entry="kukicha">
-      <header>
-        <h3>Kukicha</h3>
-      </header>
-      <section>
-        <section>
-          <p>Kukicha is a japenese Green Tea, which mainly consists of Leaf Veins and Stems, and therefore also contains less theine. The quality of Kukicha is similar to the quality of Sencha.</p>
-
-          <p>If Kukicha consist of Leaf Vains that were during the preparation of Gyokuro, it is called Karigane or Shiarore to indicate the special taste.</p>
-
-          <table class="tea-data">
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td>Tea Leaves</td>
-                <td>~ 3-4 g / 180 ml<br /></td>
-              </tr>
-              <tr>
-                <td>Temperature</td>
-                <td>~ 90 °C</td>
-              </tr>
-              <tr>
-                <td>Brewing Time</td>
-                <td>~ 00:35 Minutes</td>
-              </tr>
-              <tr>
-                <td>Infusions</td>
-                <td>~ 3-5</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p>The highest quality Gyokuros can be infused with a water temperature of <span class="no-break">~ 40 °C</span>. In some cases even the Ice-Methode can be used.</sup></p>
-        </section>
-        <footer>
-          <ul class="tea-tags">
-            <li>Japan</li>
-            <li>GreenTea</li>
-            <li>Kukicha</li>
-            <li>Karigane</li>
-            <li>Shiarore</li>
-            <li>LeafVein</li>
-            <li>Stems</li>
-          </ul>
-        </footer>
-      </section>
-    </div>
-
-    <div class="glossary-entry" data-entry="kamairicha">
-      <header>
-        <h3>Kamairicha</h3>
-      </header>
-      <section>
-        <section>
-          <p>Kamairicha is very different from other Japanese Teas. In fact this Tea doesn't even fit the typical flavor profile of Japenese Green Tea. Very early in the process of creating this Tea, the Leaves are roasted at about <span class="no-break">~ 300 °C</span>. These Leaves are not steamed. Typically this Tea is shaped into comma or Magatama. The shape of the processed Tea Leaves reminds more of Chinese Teas than Japanese.</p>
-
-          <p>This Tea is said have a slightly roasted flavor and fresh sweetness.</p>
-
-          <table class="tea-data">
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td>Tea Leaves</td>
-                <td>~ 5 g / 450 ml<br /></td>
-              </tr>
-              <tr>
-                <td>Temperature</td>
-                <td>~ 80 °C</td>
-              </tr>
-              <tr>
-                <td>Brewing Time</td>
-                <td>~ 01:00 Minutes</td>
-              </tr>
-              <tr>
-                <td>Infusions</td>
-                <td>~ 2</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <footer>
-          <ul class="tea-tags">
-            <li>Japan</li>
-            <li>GreenTea</li>
-            <li>RoastedTea</li>
-            <li></li>
-            <li>Kamairicha</li>
-            <li>Kyushu</li>
-            <li>Sechibaru</li>
-            <li>Ureshino</li>
-          </ul>
-        </footer>
-      </section>
-    </div>
-  </div>
-
-  <h2 class="glossary-alphabet" data-glossary="L">L</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="M">M</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="N">N</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="O">O</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="P">P</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="Q">Q</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="R">R</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="S">S</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="T">T</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="U">U</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="V">V</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="W">W</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="X">X</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="Y">Y</h2>
-
-  <h2 class="glossary-alphabet" data-glossary="Z">Z</h2>
-
-  <script src="javascript/glossary-search.js"></script>
-  <script src="javascript/responsive-navigation.js"></script>
-  <script src="javascript/glossary-dropdown.js"></script>
-  <script src="javascript/glossary-alphabet-dynamic.js"></script>
-</body>
-
-</html>
+  script(src="javascript/glossary.js")

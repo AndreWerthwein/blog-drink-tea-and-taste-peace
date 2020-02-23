@@ -1,373 +1,230 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+doctype html
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta http-equiv="language" content="DE" />
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="email=yes">
-  <meta name="format-detection" content="date=yes">
+html(lang="de")
 
-  <link rel="stylesheet" href="./css/reset.min.css">
-  <link rel="stylesheet" href="./css/structure.min.css">
-  <link rel="stylesheet" href="./css/typefaces.min.css">
-  <link rel="stylesheet" href="./css/typography.min.css">
-  <title>Drink Tea, Taste Peace</title>
-</head>
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")
+    meta(http-equiv="language" content="en")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="format-detection" content="address=no")
+    meta(name="format-detection" content="email=yes")
+    meta(name="format-detection" content="date=yes")
 
-<body>
-  <nav id="main-navigation">
-    <section>
-      <h1>Drink Tea,<br />Taste Peace</h1>
-    </section>
-    <hr />
-    <h2>00</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>00</td>
-          <td>&mdash;</td>
-          <td><a href="index.html">Home</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="description" lang="en" content="Blog of an Amateur-Tea-Sommelier")
 
-    <h2>01</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="about-me.html">About me?</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="glossary.html">Glossary</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="reviews.html">Reviews</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="author" content="André-Pascal Werthwein")
+    meta(name="copyright" content="André-Pascal Werthwein")
+    meta(name="publisher" content="blog.andrewerthwein.de")
+    meta(name="title" lang="en" content="Blog of an Amateur-Tea-Sommelier")
+    meta(name="page-topic" lang="en" content="Tea")
+    meta(name="audience" lang="en" content="All")
+    meta(name="page-type" lang="en" content="Blog")
 
-    <h2>02</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="july.html">07/2019</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="robots" content="noindex, nofollow")
+    meta(name="revisit-after" content="30 days")
+    meta(name="expires" content="never")
+    meta(name="allow-search" content="no")
+    meta(name="google" content="nositelinkssearchbox")
+    meta(name="googlebot" content="noindex")
 
-    <h2>03</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="theme-color" content="#FFFFFF")
 
-    <h2>04</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr class="current-page">
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="imprint.html">Imprint</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="privacy-policy.html">Privacy Policy</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>
-      </tbody>
-    </table>
+    //-link(rel="shortcut icon" type="image/x-icon" href="./favicons/favicon.ico")
+    //-link(rel="shortcut icon" href="./favicons/favicon.ico")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_32x32.png" sizes="32x32")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_96x96.png" sizes="96x96")
+    //-link(rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicons/fallback-touch-icon-57x57-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicons/universal-touch-icon-60x60-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicons/apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicons/apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicons/apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/touch-icon-ipad.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="167x167" href="./favicons/touch-icon-ipad-retina.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="180x180" href="./favicons/apple-touch-icon.png")
+    //-link(rel="shortcut icon" sizes="196x196" href="./favicons/chromeapp-touch-icon-196x196-precomposed.png")
+    //-meta(name="msapplication-TileColor" content="#ffffff")
+    //-meta(name="msapplication-TileImage" content="./favicons/mstile-144x144.png")
 
-    <h2>05</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="feed/feed.json">JSON-Feed</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-        </tr>
-      </tbody>
-    </table>
+    link(rel="stylesheet" href="./css/design.min.css")
+    link(rel="stylesheet" href="./css/design-responsive.min.css")
 
-    <p class="latest-update">2019/07/20 00:03</p>
-  </nav>
+    title Drink Tea, Taste Peace
 
-  <nav id="responsive-navigation-header">
-    <header>
-      <h1>Drink Tea, Taste Peace</h1>
-      <i class="material-icons">more_horizontal</i>
-    </header>
-  </nav>
-  <nav id="responsive-navigation-content">
-    <section>
-      <section>
-        <h2>00</h2>
+  body
+    nav#navigation-main
+      section
+        h1 Drink Tea,
+          br
+          | Taste Peace
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr class="current-page">
-              <td>00</td>
-              <td>&mdash;</td>
-              <td><a href="index.html">Home</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      hr
 
-      <section>
-        <h2>01</h2>
+      h2 00
+      table
+        thead
+        tbody
+          tr
+            td 00
+            td &mdash;
+            td
+              a(href="index.html") Home
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="about-me.html">About me?</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="glossary.html">Glossary</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="reviews.html">Reviews</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      h2 01
+      table
+        thead
+        tbody
+          tr
+            td 01
+            td &mdash;
+            td
+              a(href="about-me.html") About me?
+          tr
+            td 02
+            td &mdash;
+            td
+              a(href="glossary.html") Glossary
+          tr
+            td 03
+            td &mdash;
+            td
+              a(href="reviews.html") Reviews
 
-      <section>
-        <h2>02</h2>
+      h2 02
+      table
+        thead
+        tbody
+          tr
+            td 01
+            td &mdash;
+            td
+              a(href="july.html") 07/2019
+              br
+              | &times;&nbsp;&nbsp;Monday 01
+              sup st
+              br
+              | &times;&nbsp;&nbsp;Tuesday 02
+              sup nd
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="july.html">07/2019</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+  div.blog-entries
+    div.blog-entry
+      table
+        thead
+        tbody
+          tr
+            td §§§
+            td &mdash;
+            td Contact Information
+            
+      section
+        section
+          p This Website / Blog is solely dedicated to sharing my passion for Teas from all around world. Therefore, neither this Website / Blog, nor its sub pages, have any kind of commercial character whatsoever. Therefore, I subsequently state Name and Address of the Owner [Service Provider] — André-Pascal Werthwein.&nbsp;
+            span.comment [§1 Abs. 4 TMG, §55 Abs. 1 RstV]
 
-      <section>
-        <h2>03</h2>
+          table.contact-details
+            thead
+            tbody
+              tr
+                td Name:
+                td André-Pascal Werthwein
+              tr
+                td Address:
+                td Nietzsche Straße 16,<br />68165 Mannheim<br />Germany
+              tr
+                td &nbsp;
+                td &nbsp;
+              tr
+                td E-Mail:
+                td
+                  a(href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x65;&#x72;&#x74;&#x68;&#x77;&#x65;&#x69;&#x6e;&#x2e;&#x64;&#x65;") &#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x65;&#x72;&#x74;&#x68;&#x77;&#x65;&#x69;&#x6e;&#x2e;&#x64;&#x65;
+              tr
+                td Website:
+                td
+                  a(href="https://www.andrewerthwein.de" target="_blank" rel="noopener") www.andrewerthwein.de
+                  br
+                  a(href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener") fat.link.andrewerthwein.de
+                  
+    div.blog-entry
+      table
+        thead
+        tbody
+          tr
+            td §§§
+            td &mdash;
+            td The Accountability for Content
+            
+      section
+        section
+          p All contents and media of this website have been created with utmost care. However, neither Accuracy, Completeness nor Topicality can be guaranteed. According to statutory provisions, the service provider&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — is responsible for the contents on this Website, as well as on its sub pages.&nbsp;
+            span.comment [§ 7 Abs. 1 TMG]
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          p The service provider&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — is not obliged to monitor the transmitted or stored information of third parties. Concerning this matter the service provider&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — is also not obliged to investigate circumstances pointing to illegal activities.&nbsp;
+            span.comment [§ 7 Abs. 2 TMG, §§ 8 bis 10 TMG]
 
-      <section>
-        <h2>04</h2>
+          p The obligations to remove or block the use of information under generally applicable laws remain unaffected by this.&nbsp;
+            span.comment [§ 7 Abs. 3 Satz 1 TMG]
+            | &nbsp;Liability concerning this is first possible with the knowledge of the concrete infringements.&nbsp;
+            strong With the recognition of infringements the contents in question will immediately be removed.
+            
+    div.blog-entry
+      table
+        thead
+        tbody
+          tr
+            td §§§
+            td &mdash;
+            td The Accountability for Hyperlinks
+            
+      section
+        section
+          p This website, as well as its sub pages, contain hyperlinks to Websites of third parties. The contents of these,&nbsp;
+            span.comment [linked]
+            | &nbsp;Websites can not be influenced. Therefore, the service provider of this website&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — can not be held responsible for the contents of these&nbsp;
+            span.comment [linked]
+            | &nbsp;Websites. For the contents of these&nbsp;
+            span.comment [linked]
+            | &nbsp;Websites, is always the Service Provider&nbsp;
+            span.comment [Owner]
+            | &nbsp;of the website in question responsible. Before linking to these Websites&nbsp;
+            span.comment [of third parties]
+            | , the websites were checked for infringements. At the time of linking to these websites&nbsp;
+            span.comment [of third parties]
+            | &nbsp;no infringements whatsoever were recognizable.
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="imprint.html">Imprint</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="privacy-policy.html">Privacy Policy</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="contact.html">Contact</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          p A permanent monitoring of contents of these linked Websites of third parties can not be reasonably expected, without any concrete indications of infringements.
+            strong with the recognition of infringements the hyperlinks to Websites&nbsp;
+              span.comment [of third parties]
+              | &nbsp;in question will immediately be removed.
+              
+    div.blog-entry
+      table
+        thead
+        tbody
+          tr
+            td §§§
+            td &mdash;
+            td The Copyright
+            
+      section
+        section
+          p All contents and media of this Website, as well as its sub pages, created by the service provider of this website&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — are subject to German Copyright Law.&nbsp;
+            strong The duplication, modification, distribution and any other way of utilization beyond the limits of the Copyright Law needs explicit approval.
+            | &nbsp;Downloads and Copies of this Website are allowed only for private, non-commercial use.</p>
 
-      <section>
-        <h2>05</h2>
-
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="feed/feed.json">JSON-Feed</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </section>
-    <footer>
-      <p class="latest-update">2019/07/20 00:03</p>
-    </footer>
-  </nav>
-
-  <div class="blog-entries">
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>§§§</td>
-            <td>&mdash;</td>
-            <td>Contact Information</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>This Website / Blog is solely dedicated to sharing my passion for Teas from all around world. Therefore, neither this Website / Blog, nor its sub pages, have any kind of commercial character whatsoever. Therefore, I subsequently state Name and Address of the Owner [Service Provider] — André-Pascal Werthwein. <span class="comment">[§1 Abs. 4 TMG, §55 Abs. 1 RstV]</span></p>
-
-          <table class="contact-details">
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td>Name:</td>
-                <td>André-Pascal Werthwein</td>
-              </tr>
-              <tr>
-                <td>Address:</td>
-                <td>Nietzsche Straße 16,<br />68165 Mannheim<br />Germany</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>E-Mail:</td>
-                <td><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x65;&#x72;&#x74;&#x68;&#x77;&#x65;&#x69;&#x6e;&#x2e;&#x64;&#x65;">
-&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x65;&#x72;&#x74;&#x68;&#x77;&#x65;&#x69;&#x6e;&#x2e;&#x64;&#x65;</a></td>
-              </tr>
-              <tr>
-                <td>Website:</td>
-                <td><a href="https://www.andrewerthwein.de" target="_blank" rel="noopener">www.andrewerthwein.de</a><br /><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">fat.link.andrewerthwein.de</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
-    </div>
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>§§§</td>
-            <td>&mdash;</td>
-            <td>The Accountability for Content</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>All contents and media of this website have been created with utmost care. However, neither Accuracy, Completeness nor Topicality can be guaranteed. According to statutory provisions, the service provider <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — is responsible for the contents on this Website, as well as on its sub pages. <span class="comment">[§ 7 Abs. 1 TMG]</span></p>
-
-          <p>The service provider <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — is not obliged to monitor the transmitted or stored information of third parties. Concerning this matter the service provider <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — is also not obliged to investigate circumstances pointing to illegal activities. <span class="comment">[§ 7 Abs. 2 TMG, §§ 8 bis 10 TMG]</span></p>
-
-          <p>The obligations to remove or block the use of information under generally applicable laws remain unaffected by this. <span class="comment">[§ 7 Abs. 3 Satz 1 TMG]</span> Liability concerning this is first possible with the knowledge of the concrete infringements. <strong>With the recognition of infringements the contents in question will immediately be removed.</strong></p>
-        </section>
-      </section>
-    </div>
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>§§§</td>
-            <td>&mdash;</td>
-            <td>The Accountability for Hyperlinks</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>This website, as well as its sub pages, contain hyperlinks to Websites of third parties. The contents of these, <span class="comment">[linked]</span> Websites can not be influenced. Therefore, the service provider of this website <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — can not be held responsible for the contents of these <span class="comment">[linked]</span> Websites. For the contents of these <span class="comment">[linked]</span> Websites, is always the Service Provider <span class="comment">[Owner]</span> of the website in question responsible. Before linking to these Websites <span class="comment">[of third parties]</span>, the websites were checked for infringements. At the time of linking to these websites <span class="comment">[of third parties]</span> no infringements whatsoever were recognizable.</p>
-
-          <p>A permanent monitoring of contents of these linked Websites of third parties can not be reasonably expected, without any concrete indications of infringements. <strong>With the recognition of infringements the hyperlinks to Websites <span class="comment">[of third parties]</span> in question will immediately be removed.</strong></p>
-        </section>
-      </section>
-    </div>
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>§§§</td>
-            <td>&mdash;</td>
-            <td>The Copyright</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>All contents and media of this Website, as well as its sub pages, created by the service provider of this website <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — are subject to German Copyright Law. <strong>The duplication, modification, distribution and any other way of utilization beyond the limits of the Copyright Law needs explicit approval.</strong> Downloads and Copies of this Website are allowed only for private, non-commercial use.</p>
-
-          <p>All the contents of this Website, as well as its sub pages, that are not created by the service provider of this website <span class="comment">[Owner of this Website]</span> — André-Pascal Werthwein — respect the Copyright of third parties. These contents are explicitly marked as contents of third parties. Furthermore, the rights of co-authors are respected as well. Should you however recognize any infringements, please give notice. <strong>With the recognition of infringements the contents in question will immediately be removed.</strong></p>
-        </section>
-      </section>
-    </div>
-  </div>
-
-  <script src="javascript/responsive-navigation.js"></script>
-</body>
-
-</html>
+          p All the contents of this Website, as well as its sub pages, that are not created by the service provider of this website&nbsp;
+            span.comment [Owner of this Website]
+            | &nbsp;— André-Pascal Werthwein — respect the Copyright of third parties. These contents are explicitly marked as contents of third parties. Furthermore, the rights of co-authors are respected as well. Should you however recognize any infringements, please give notice.&nbsp;
+            strong With the recognition of infringements the contents in question will immediately be removed.

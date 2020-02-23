@@ -9,9 +9,6 @@ function minifyGlossaryEntries() {
   }
 }
 
-// Herstellung des Seitenaufbaus
-minifyGlossaryEntries();
-
 for (var x = 0; x < glossaryEntries.length; x = x + 1) {
   glossaryEntries[x].addEventListener('click', function(e) {
     e.preventDefault();
@@ -19,10 +16,6 @@ for (var x = 0; x < glossaryEntries.length; x = x + 1) {
     var dropdownCurrent = this.dataset.entry;
 
     if (dropdownToggle === dropdownCurrent) {
-      minifyGlossaryEntries();
-      dropdownToggle = "";
-    } else if (this.offsetHeight > 45.4) {
-      console.log(this.offsetHeight);
       minifyGlossaryEntries();
       dropdownToggle = "";
     } else {
