@@ -1,18 +1,31 @@
-@import "./basic-configuration/reset.sass"
-@import "./basic-configuration/typefaces.sass"
+// ---- variables needed for cosistency ---- //
 
-@import "./structure-layout/blog-entries.sass"
-@import "./structure-layout/form-fields.sass"
-@import "./structure-layout/glossary.sass"
-@import "./structure-layout/navigation-main.sass"
-//@import "./structure-layout/navigation-responsive.sass"
-@import "./structure-layout/reviews.sass"
-@import "./structure-layout/legal-information.sass"
+@import './abstracts/variables.sass'
 
-@import "./specific-design/typography.sass"
-@import "./specific-design/basic-elements.sass"
+// ---- basic cofiguration ---- //
 
-@import "./animation/animations.sass"
-@import "./animation/cursor.sass"
+@import './base/reset.sass'
+@import './base/typefaces'
+@import './base/typography.sass'
 
-@import "./color-management/colors.sass"
+// ---- reusable components ---- //
+
+@import './components/basic-elements'
+@import './components/form-fields'
+@import './components/blog-entries'
+@import './components/legal-information'
+
+// ---- consistent layouts ---- //
+
+@import './layout/navigation-main'
+@import './layout/navigation-responsive'
+
+// ---- page-specific layouts and designs ---- //
+
+@import './pages/reviews'
+@import './pages/glossary'
+
+// ---- color- and design-themes ---- //
+
+@import './themes/light-mode'
+@import './themes/animation'
