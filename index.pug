@@ -1,318 +1,173 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+doctype html
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta http-equiv="language" content="DE" />
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="email=yes">
-  <meta name="format-detection" content="date=yes">
+html(lang="de")
 
-  <link rel="stylesheet" href="./css/reset.min.css">
-  <link rel="stylesheet" href="./css/structure.min.css">
-  <link rel="stylesheet" href="./css/typefaces.min.css">
-  <link rel="stylesheet" href="./css/typography.min.css">
-  <title>Drink Tea, Taste Peace</title>
-</head>
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")
+    meta(http-equiv="language" content="en")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="format-detection" content="address=no")
+    meta(name="format-detection" content="email=yes")
+    meta(name="format-detection" content="date=yes")
 
-<body>
-  <nav id="main-navigation">
-    <section>
-      <h1>Drink Tea,<br />Taste Peace</h1>
-    </section>
-    <hr />
-    <h2>00</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr class="current-page">
-          <td>00</td>
-          <td>&mdash;</td>
-          <td><a href="index.html">Home</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="description" lang="en" content="Blog of an Amateur-Tea-Sommelier")
 
-    <h2>01</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="about-me.html">About me?</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="glossary.html">Glossary</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="reviews.html">Reviews</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="author" content="André-Pascal Werthwein")
+    meta(name="copyright" content="André-Pascal Werthwein")
+    meta(name="publisher" content="blog.andrewerthwein.de")
+    meta(name="title" lang="en" content="Blog of an Amateur-Tea-Sommelier")
+    meta(name="page-topic" lang="en" content="Tea")
+    meta(name="audience" lang="en" content="All")
+    meta(name="page-type" lang="en" content="Blog")
 
-    <h2>02</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="july.html">07/2019</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="robots" content="noindex, nofollow")
+    meta(name="revisit-after" content="30 days")
+    meta(name="expires" content="never")
+    meta(name="allow-search" content="no")
+    meta(name="google" content="nositelinkssearchbox")
+    meta(name="googlebot" content="noindex")
 
-    <h2>03</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-        </tr>
-      </tbody>
-    </table>
+    meta(name="theme-color" content="#FFFFFF")
 
-    <h2>04</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="imprint.html">Imprint</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="privacy-policy.html">Privacy Policy</a></td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>&mdash;</td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>
-      </tbody>
-    </table>
+    //-link(rel="shortcut icon" type="image/x-icon" href="./favicons/favicon.ico")
+    //-link(rel="shortcut icon" href="./favicons/favicon.ico")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_32x32.png" sizes="32x32")
+    //-link(rel="icon" type="image/png" href="./favicons/favicon_96x96.png" sizes="96x96")
+    //-link(rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicons/fallback-touch-icon-57x57-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicons/universal-touch-icon-60x60-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicons/apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicons/apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicons/apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicons/apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/touch-icon-ipad.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="167x167" href="./favicons/touch-icon-ipad-retina.png")
+    //-link(rel="apple-touch-icon-precomposed" sizes="180x180" href="./favicons/apple-touch-icon.png")
+    //-link(rel="shortcut icon" sizes="196x196" href="./favicons/chromeapp-touch-icon-196x196-precomposed.png")
+    //-meta(name="msapplication-TileColor" content="#ffffff")
+    //-meta(name="msapplication-TileImage" content="./favicons/mstile-144x144.png")
 
-    <h2>05</h2>
-    <table>
-      <thead></thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>&mdash;</td>
-          <td><a href="feed/feed.json">JSON-Feed</a></td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>&mdash;</td>
-          <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-        </tr>
-      </tbody>
-    </table>
+    link(rel="stylesheet" href="./css/design.min.css")
+    link(rel="stylesheet" href="./css/design-responsive.min.css")
 
-    <p class="latest-update">2019/07/20 00:03</p>
-  </nav>
+    title Drink Tea, Taste Peace
 
-  <nav id="responsive-navigation-header">
-    <header>
-      <h1>Drink Tea, Taste Peace</h1>
-      <i class="material-icons">more_horizontal</i>
-    </header>
-  </nav>
-  <nav id="responsive-navigation-content">
-    <section>
-      <section>
-        <h2>00</h2>
+  body
+    nav#navigation-main
+      section
+        h1 Drink Tea,
+          br
+          | Taste Peace
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr class="current-page">
-              <td>00</td>
-              <td>&mdash;</td>
-              <td><a href="index.html">Home</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      hr
 
-      <section>
-        <h2>01</h2>
+      h2 01
+      header.dropdown-header
+        p.material-icons keyboard_arrow_down
+        p &mdash;
+        p 07/2020
+      section.dropdown-content
+        ul
+          li &times;&nbsp;&nbsp;Monday 01
+            sup st
+          li &times;&nbsp;&nbsp;Monday 01
+            sup st
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="about-me.html">About me?</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="glossary.html">Glossary</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="reviews.html">Reviews</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      h2 02
+      section.navigation-section
+        p 01
+        p &mdash;
+        p 07/2020
+      section.navigation-section
+        p 02
+        p &mdash;
+        p 07/2020
+      section.navigation-section
+        p 03
+        p &mdash;
+        p 07/2020
 
-      <section>
-        <h2>02</h2>
+  div.blog-entries
+    div.blog-entry
+      table
+        thead
+        tbody
+          tr
+            td 001
+            td &mdash;
+            td Title of the Blogentry&nbsp;
+              sup.comment [2019/07/02]
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="july.html">07/2019</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      section
+        section
+          section.chart-style
+            p 
+              span.chart-option.chart-option-chosen(data-chart="polar" data-evaluation="tee") Polar Chat
+              | &nbsp;&nbsp;|&nbsp;&nbsp;
+              span.chart-option(data-chart="bar" data-evaluation="tee") Bar Chart
 
-      <section>
-        <h2>03</h2>
+          svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="320px" height="320px" data-evaluation="tee")
+            g.flavor-profile-grid
+              circle(cx="160" cy="160" r="150")
+              circle(cx="160" cy="160" r="125")
+              circle(cx="160" cy="160" r="100")
+              circle(cx="160" cy="160" r="75")
+              circle(cx="160" cy="160" r="50")
+              circle(cx="160" cy="160" r="25")
+              line(x1="160" y1="160" x2="160" y2="10")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(24 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(48 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(72 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(96 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(120 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(144 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(168 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(192 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(216 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(240 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(264 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(288 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(312 160 160)")
+              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(336 160 160)")
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="https://andrewerthwein.de" target="_blank" rel="noopener">Portfolio</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener">Projects</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+              //- ticks for the legened
+              line(x1="160" y1="0" x2="160" y2="6")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(24 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(48 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(72 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(96 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(120 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(144 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(168 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(192 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(216 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(240 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(264 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(288 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(312 160 160)")
+              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(336 160 160)")
 
-      <section>
-        <h2>04</h2>
+            g.flavor-profile-values
+              g.chart-polar(data-chart="polar")
+                polyline#flavor-profile(points="" transform="rotate(-90 160 160)")
+              g.chart-bar.hide(data-chart="bar")
+                line(x1="160" y1="160" x2="160" y2="")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(24 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(48 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(72 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(96 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(120 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(144 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(168 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(192 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(216 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(240 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(264 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(288 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(312 160 160)")
+                line(x1="160" y1="160" x2="160" y2="" transform="rotate(336 160 160)")
 
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="imprint.html">Imprint</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="privacy-policy.html">Privacy Policy</a></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>&mdash;</td>
-              <td><a href="contact.html">Contact</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>05</h2>
-
-        <table>
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>&mdash;</td>
-              <td><a href="feed/feed.json">JSON-Feed</a></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>&mdash;</td>
-              <td><a href="feed/atom.xml">ATOM-Feed</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </section>
-    <footer>
-      <p class="latest-update">2019/07/20 00:03</p>
-    </footer>
-  </nav>
-
-  <div class="blog-entries">
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>001</td>
-            <td>&mdash;</td>
-            <td>Title of the Blogentry</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <hr />
-        <footer>
-          <p><time>2019/07/XX</time>&nbsp;&nbsp;|&nbsp;&nbsp;André-Pascal Werthwein</p>
-        </footer>
-      </section>
-    </div>
-
-    <div class="blog-entry">
-      <table>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>002</td>
-            <td>&mdash;</td>
-            <td>Title of the Blogentry</td>
-          </tr>
-        </tbody>
-      </table>
-      <section>
-        <section>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <hr />
-        <footer>
-          <p><time>2019/07/XX</time>&nbsp;&nbsp;|&nbsp;&nbsp;André-Pascal Werthwein</p>
-        </footer>
-      </section>
-    </div>
-
-  </div>
-
-  <script src="javascript/responsive-navigation.js"></script>
-</body>
-
-</html>
+//- script(src="javascript/responsive-navigation.js")
+script(src="javascript/flavor-profile.js")

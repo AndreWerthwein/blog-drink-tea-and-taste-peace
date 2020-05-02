@@ -184,23 +184,15 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
   font-family: 'Inter Thin';
   font-style: normal;
   font-weight: 300;
-  src: url("./typefaces/inter/inter-300.woff2");
-  src: local("Open Sans Thin"), local("OpenSans-Thin"), url("./typefaces/inter/inter-300.woff2") format("woff2"), url("./typefaces/inter/inter-300.woff") format("woff"), url("./typefaces/inter/inter-300.ttf") format("truetype"), url("./typefaces/inter/inter-300.otf") format("opentype"); }
+  src: url("../../src/typefaces/inter/inter-300.woff2");
+  src: local("Open Sans Thin"), local("OpenSans-Thin"), url("../../src/typefaces/inter/inter-300.woff2") format("woff2"), url("../../src/typefaces/inter/inter-300.woff") format("woff"), url("../../src/typefaces/inter/inter-300.ttf") format("truetype"), url("../../src/typefaces/inter/inter-300.otf") format("opentype"); }
 
 @font-face {
   font-family: 'Inter Bold';
   font-style: normal;
   font-weight: 700;
-  src: url("./typefaces/inter/inter-700.woff2");
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("./typefaces/inter/inter-700.woff2") format("woff2"), url("./typefaces/inter/inter-700.woff") format("woff"), url("./typefaces/inter/inter-700.ttf") format("truetype"), url("./typefaces/inter/inter-700.otf") format("opentype"); }
-
-@font-face {
-  font-family: 'Material Icons';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./typefaces/material-icons/material-icons.eot");
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url("./typefaces/material-icons/material-icons.woff2") format("woff2"), url("./typefaces/material-icons/material-icons.woff") format("woff"), url("./typefaces/material-icons/material-icons.ttf") format("truetype"); }
+  src: url("../../src/typefaces/inter/inter-700.woff2");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../src/typefaces/inter/inter-700.woff2") format("woff2"), url("../../src/typefaces/inter/inter-700.woff") format("woff"), url("../../src/typefaces/inter/inter-700.ttf") format("truetype"), url("../../src/typefaces/inter/inter-700.otf") format("opentype"); }
 
 html {
   font-family: 'Inter', Helvetica, Arial, Verdana, sans-serif;
@@ -247,6 +239,9 @@ p {
 strong {
   font-weight: 700; }
 
+.comment {
+  transition: all 0.3s ease-in-out; }
+
 .no-break {
   white-space: nowrap; }
 
@@ -257,6 +252,9 @@ strong {
 .blog-entry > table {
   font-size: 1.5rem;
   font-weight: 700; }
+
+.blog-entry > table .comment {
+  font-weight: 300; }
 
 .blog-entry p {
   line-height: 1.4;
@@ -305,6 +303,10 @@ input[name="search"] {
   width: calc(50% - (30px / 2));
   margin: 0px 0px 30px 0px; }
 
+.blog-entry img {
+  width: 100%;
+  height: auto; }
+
 .blog-entry > table > tbody > tr > td:first-child {
   width: 55px; }
 
@@ -317,6 +319,22 @@ input[name="search"] {
 
 .blog-entry > section {
   margin: 0px 0px 0px 95px; }
+
+.flavor-profile-grid {
+  stroke-width: 1px;
+  fill: none;
+  stroke: lightgray; }
+
+.flavor-profile-values {
+  stroke-width: 3px;
+  fill: none;
+  stroke: coral; }
+
+.chart-option {
+  transition: all 0.3s ease-in-out; }
+
+.chart-option-chosen {
+  text-decoration: underline; }
 
 .contact-details > tbody > tr > td:last-child {
   padding: 0px 0px 0px 15px; }
@@ -335,33 +353,22 @@ input[name="search"] {
   top: 15px;
   right: 15px; }
 
-#navigation-main > section {
-  margin: 0px 0px 15px 0px; }
+.dropdown-header,
+.navigation-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-#navigation-main > section > img {
-  width: 100%; }
+.dropdown-identifier {
+  width: 6px;
+  height: 1px;
+  background-color: black; }
 
-#navigation-main > section > h1 {
-  margin: 0px 0px 5px 0px; }
-
-#navigation-main > h2 {
-  width: 32px;
-  margin: 0px;
-  text-align: right; }
-
-#navigation-main > table {
-  width: calc(100% - 32px);
-  margin: 0px 0px 15px 32px; }
-
-#navigation-main > table > tbody > tr > td:first-child {
-  width: 21px; }
-
-#navigation-main > table > tbody > tr > td:nth-child(2) {
-  width: 30px;
+.dropdown-header p:nth-child(2) {
+  width: 40px;
+  background-color: pink;
   text-align: center; }
-
-#navigation-main > table > tbody > tr > td:last-child {
-  width: calc(100% - 51px); }
 
 .reviews-entries {
   width: calc(100vw - (240px + 120px));
