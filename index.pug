@@ -90,84 +90,90 @@ html(lang="de")
         p 07/2020
 
   div.blog-entries
-    div.blog-entry
-      table
-        thead
-        tbody
-          tr
-            td 001
-            td &mdash;
-            td Title of the Blogentry&nbsp;
-              sup.comment [2019/07/02]
-
+    div.blog-entry.blog-entry-complex(data-topic="lupicia-queens-muscat-oolong")
+      header
+        h1 001
+        h1 &mdash;
+        h1 Queen's Muscat Oolong&nbsp;
+          sup.comment
+            time() [2020/05/06]
       section
         section
-          section.chart-style
-            p 
-              span.chart-option.chart-option-chosen(data-chart="polar" data-evaluation="tee") Polar Chat
-              | &nbsp;&nbsp;|&nbsp;&nbsp;
-              span.chart-option(data-chart="bar" data-evaluation="tee") Bar Chart
+        section.navigation-blog-entry-content
+          ul
+            li.blog-entry-content-current(data-section="description")
+              span.current-choice-identifier &times;
+              | Description
+            li(data-section="evaluation")
+              span.current-choice-identifier &times;
+              | Evaluation
+        section.blog-entry-content
+          section.show(data-section="description")
+            p Yoo. Because, you might regret it later in life. I know what you're gonna say, son, and you're right, you're right, But Biff just happens to be my supervisor, and I'm afraid I'm not very good at confrontations. I'm writing this down, this is good stuff. Excuse me.
 
-          svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="320px" height="320px" data-evaluation="tee")
-            g.flavor-profile-grid
-              circle(cx="160" cy="160" r="150")
-              circle(cx="160" cy="160" r="125")
-              circle(cx="160" cy="160" r="100")
-              circle(cx="160" cy="160" r="75")
-              circle(cx="160" cy="160" r="50")
-              circle(cx="160" cy="160" r="25")
-              line(x1="160" y1="160" x2="160" y2="10")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(24 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(48 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(72 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(96 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(120 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(144 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(168 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(192 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(216 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(240 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(264 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(288 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(312 160 160)")
-              line(x1="160" y1="160" x2="160" y2="10" transform="rotate(336 160 160)")
+            p Yoo. Because, you might regret it later in life. I know what you're gonna say, son, and you're right, you're right, But Biff just happens to be my supervisor, and I'm afraid I'm not very good at confrontations. I'm writing this down, this is good stuff. Excuse me.
 
-              //- ticks for the legened
-              line(x1="160" y1="0" x2="160" y2="6")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(24 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(48 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(72 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(96 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(120 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(144 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(168 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(192 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(216 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(240 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(264 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(288 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(312 160 160)")
-              line(x1="160" y1="0" x2="160" y2="6" transform="rotate(336 160 160)")
+          section(data-section="evaluation")
+            svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="320px" height="320px" data-evaluation="tee")
+              g.flavor-profile-grid
+                circle(cx="160" cy="160" r="150")
+                circle(cx="160" cy="160" r="125")
+                circle(cx="160" cy="160" r="100")
+                circle(cx="160" cy="160" r="75")
+                circle(cx="160" cy="160" r="50")
+                circle(cx="160" cy="160" r="25")
+                line(x1="160" y1="160" x2="160" y2="10")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(24 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(48 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(72 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(96 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(120 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(144 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(168 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(192 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(216 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(240 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(264 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(288 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(312 160 160)")
+                line(x1="160" y1="160" x2="160" y2="10" transform="rotate(336 160 160)")
 
-            g.flavor-profile-values
-              g.chart-polar(data-chart="polar")
-                polyline#flavor-profile(points="" transform="rotate(-90 160 160)")
-              g.chart-bar.hide(data-chart="bar")
-                line(x1="160" y1="160" x2="160" y2="")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(24 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(48 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(72 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(96 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(120 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(144 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(168 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(192 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(216 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(240 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(264 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(288 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(312 160 160)")
-                line(x1="160" y1="160" x2="160" y2="" transform="rotate(336 160 160)")
+                //- ticks for the legened
+                line(x1="160" y1="0" x2="160" y2="6")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(24 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(48 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(72 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(96 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(120 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(144 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(168 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(192 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(216 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(240 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(264 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(288 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(312 160 160)")
+                line(x1="160" y1="0" x2="160" y2="6" transform="rotate(336 160 160)")
+
+              g.flavor-profile-values
+                g.chart-polar.hide(data-chart="polar")
+                  polyline#flavor-profile(points="" transform="rotate(-90 160 160)")
+                g.chart-bar(data-chart="bar")
+                  line(x1="160" y1="160" x2="160" y2="")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(24 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(48 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(72 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(96 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(120 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(144 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(168 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(192 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(216 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(240 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(264 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(288 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(312 160 160)")
+                  line(x1="160" y1="160" x2="160" y2="" transform="rotate(336 160 160)")
 
 //- script(src="javascript/responsive-navigation.js")
-script(src="javascript/flavor-profile.js")
+script(src="javascript/blog-entry.js")

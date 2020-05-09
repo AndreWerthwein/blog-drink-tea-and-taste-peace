@@ -13,19 +13,45 @@
   width: calc(50% - (30px / 2))
   margin: 0px 0px 30px 0px
 
-.blog-entry img
+.blog-entry header,
+.blog-entry-complex > section
   width: 100%
-  height: auto
+  display: flex
+  justify-content: flex-start
+  align-items: top
 
-.blog-entry > table > tbody > tr > td:first-child
-  width: 55px
+.blog-entry-complex > section > section:first-child,
+.blog-entry header h1:first-child
+  width: 70px
+  text-align: right
 
-.blog-entry > table > tbody > tr > td:nth-child(2)
+.blog-entry-complex > section > section:nth-child(2),
+.blog-entry header h1:nth-child(2)
   width: 40px
   text-align: center
 
-.blog-entry > table > tbody > tr > td:last-child
-  width: calc(100% - 90px)
+.blog-entry-complex > section > section:last-child,
+.blog-entry header h1:last-child
+  width: calc(100% - 110px)
 
-.blog-entry > section
-  margin: 0px 0px 0px 95px
+.navigation-blog-entry-content
+  writing-mode: vertical-lr
+  text-orientation: mixed
+
+.navigation-blog-entry-content ul
+  display: flex
+  justify-content: flex-start
+  align-items: top
+
+.navigation-blog-entry-content ul li
+  padding: 0px 0px 0px 4px 
+  margin: 0px 0px 15px 0px
+  transition: all 0.3s ease-in-out
+
+.blog-entry-content section
+  width: 100%
+  height: 300px
+  display: none
+
+.current-choice-identifier
+  opacity: 0

@@ -6,7 +6,11 @@
 var flavorPropertyRanking = [0, 25, 50, 75, 100, 125, 150];
 
 var teaFlavorProfiles = {
-    "tra-viet-lotus-green": [2, 1, 1, 5, 4, 0, 0, 0, 2, 0, 4, 1, 0, 0, 0]
+    "tra-viet-lotus-green": [2, 1, 1, 5, 4, 0, 0, 0, 2, 0, 4, 1, 0, 0, 0],
+    "teegschwender-natur-stoffwechsel": [3, 3, 3, 3, 4, 0, 0, 0, 4, 2, 3, 2, 4, 1, 0],
+    "lupicia-queens-muscat-oolong": [4, 3, 2, 1, 3, 3, 0, 1, 2, 0, 0, 4, 6, 1, 0],
+    "madaspice-milky-oolong": [3, 0, 1, 1, 0, 3, 0,0, 3, 0, 0, 0, 1, 0, 0],
+    "earl-grey-darjeeling": [0, 5, 7, 2, 4, 1, 0, 1, 1, 2, 4, 0, 5, 0, 0]
 };
 
 // converting degrees into calculateable format; radians
@@ -53,7 +57,7 @@ function calculatePolarChart(teaFlavorProfile) {
     document.querySelector('#flavor-profile').setAttribute('points', coordinateString);
 }
 
-calculatePolarChart(teaFlavorProfiles['tra-viet-lotus-green']);
+// .calculatePolarChart(teaFlavorProfiles['tra-viet-lotus-green']);
 
 function calculateBarChart(teaFlavorProfile) {
     var flavorProfileBar = document.querySelectorAll('.chart-bar line');
@@ -67,36 +71,35 @@ function calculateBarChart(teaFlavorProfile) {
     }
 }
 
-calculateBarChart(teaFlavorProfiles['tra-viet-lotus-green']);
+// .calculateBarChart(teaFlavorProfiles['tra-viet-lotus-green']);
 
-// changing between chart-types
-/* var buttonChartOption = document.querySelectorAll('.chart-option');
+// navigation:blog-entry-content
+function resetBlogEntryNavigation(blogEntryCurrent) {
+    var blogEntryContent = document.querySelectorAll('.blog-entry[data-topic="' + blogEntryCurrent + '"] .blog-entry-content > section');
+    var blogEntryContentNavigationTarget = document.querySelectorAll('.blog-entry[data-topic="' + blogEntryCurrent + '"] .navigation-blog-entry-content li');
 
-var chartsBar = document.querySelectorAll('.chart-bar');
-var chartsPolar = document.querySelectorAll('.chart-polar');
-
-function hideAllCharts() {
-    for (var x = 0; x <= chartsBar.length; x = x + 1) {
-        chartsBar[x].classList = "chart-bar hide";
-        chartsPolar[x].classList = "chart-polar hide";
+    for(var x = 0; x < blogEntryContent.length; x = x + 1) {
+        blogEntryContent[x].classList.remove('show');
     }
 
-    for (var x = 0; x < buttonChartOption.length; x = x + 1) {
-        buttonChartOption[x].classList.remove('chart-option-chosen');
+    for(var x = 0; x < blogEntryContentNavigationTarget.length; x = x + 1) {
+        blogEntryContentNavigationTarget[x].classList.remove('blog-entry-content-current');
     }
 }
 
-for (var x = 0; x <= buttonChartOption.length; x = x + 1) {
-    buttonChartOption[x].addEventListener('click', function(e) {
-        console.log('click');
-        e.preventDefault();
-        
-        var currentEvaluation = document.querySelector('svg[data-evaluation="' + this.dataset.evaluation + '"');
-        var currentChart =  currentEvaluation.querySelector('g[data-chart="' + this.dataset.chart + '"');
+var navigationBlogEntryContentTarget = document.querySelectorAll('.navigation-blog-entry-content li');
 
-        hideAllCharts();
-        currentChart.classList.remove('hide');
-        this.classList.add('chart-option-chosen');
+for (var x = 0; x < navigationBlogEntryContentTarget.length; x = x + 1) {
+    navigationBlogEntryContentTarget[x].addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var blogEntryCurrent = this.closest('.blog-entry').dataset.topic;
+        console.log(this.dataset.section);
+        var blogEntryContentNew = document.querySelector('.blog-entry[data-topic="' + blogEntryCurrent + '"] section[data-section="' + this.dataset.section + '"]');
+
+        resetBlogEntryNavigation(blogEntryCurrent);
         
+        this.classList.add('blog-entry-content-current');
+        blogEntryContentNew.classList.add('show');
     });
-} */
+}
