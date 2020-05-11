@@ -88,12 +88,13 @@ function resetBlogEntryNavigation(blogEntryCurrent) {
 }
 
 var navigationBlogEntryContentTarget = document.querySelectorAll('.navigation-blog-entry-content li');
+var blogEntryCurrent;
 
 for (var x = 0; x < navigationBlogEntryContentTarget.length; x = x + 1) {
     navigationBlogEntryContentTarget[x].addEventListener('click', function(e) {
         e.preventDefault();
 
-        var blogEntryCurrent = this.closest('.blog-entry').dataset.topic;
+        blogEntryCurrent = this.closest('.blog-entry').dataset.topic;
         console.log(this.dataset.section);
         var blogEntryContentNew = document.querySelector('.blog-entry[data-topic="' + blogEntryCurrent + '"] section[data-section="' + this.dataset.section + '"]');
 
@@ -101,5 +102,39 @@ for (var x = 0; x < navigationBlogEntryContentTarget.length; x = x + 1) {
         
         this.classList.add('blog-entry-content-current');
         blogEntryContentNew.classList.add('show');
+
+        // calculate flavor-profile for current topic
+        var flavorProfileCurrent = teaFlavorProfiles[blogEntryCurrent];
+    
+        if (flavorProfileCurrent != undefined || flavorProfileCurrent != null) {
+            calculateBarChart(flavorProfileCurrent);
+            calculatePolarChart(flavorProfileCurrent);
+        }
     });
 }
+
+var navigationChartTypeTarget = document.querySelectorAll('.navigation-chart-type li');
+
+for (var x = 0; x < navigationChartTypeTarget.length; x = x + 1) {
+    navigationChartTypeTarget[x].addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var chartNew = this.dataset.chart;
+        var currentChartTargets = document.querySelectorAll('.blog-entry[data-topic="' + blogEntryCurrent + '"] .navigation-chart-type li')
+        var targetCharts = document.querySelectorAll('.blog-entry[data-topic="' + blogEntryCurrent + '"] .flavor-profile-values g');
+        var targetChart = document.querySelector('.blog-entry[data-topic="' + blogEntryCurrent + '"] .flavor-profile-values g[data-chart="' + chartNew + '"');
+            
+        for (var x = 0; x < targetCharts.length; x = x + 1) {
+            targetCharts[x].classList.remove('show');
+        }
+
+        for (var x = 0; x < currentChartTargets.length; x = x + 1) {
+            currentChartTargets[x].classList.remove('chart-type-current');
+        }
+
+        this.classList.add('chart-type-current');
+        targetChart.classList.add('show');
+
+    });
+}
+
